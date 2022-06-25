@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: my-springboot-app
-        image: 118987787108.dkr.ecr.us-east-2.amazonaws.com/cubic_ubuntu_docker_registry:latest
+        image: 118987787108.dkr.ecr.us-east-2.amazonaws.com/cubic_ubuntu_docker_registry:latest  #this is from aws ECR repository URI
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
