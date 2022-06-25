@@ -5,7 +5,7 @@ pipeline {
         maven "Maven3"
     }
     environment {
-        registry = "118987787108.dkr.ecr.us-east-2.amazonaws.com/cubic_ubuntu_docker_registry" 
+        registry = "118987787108.dkr.ecr.us-east-2.amazonaws.com/cubic_ubuntu_docker_registry" //this is from AWS ECR rpository URI
     }
 
     stages {
