@@ -33,7 +33,7 @@ pipeline {
         stage ("push into ECR"){
             steps{
             sh "aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 118987787108.dkr.ecr.us-east-2.amazonaws.com"
-            sh "docker push 118987787108.dkr.ecr.us-east-2.amazonaws.com/cubic_ubuntu_docker_registry:latest"
+            sh "docker push 118987787108.dkr.ecr.us-east-2.amazonaws.com/my-docker-repo:latest"
             }
         }
         
